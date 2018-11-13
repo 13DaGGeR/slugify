@@ -1,0 +1,28 @@
+{
+  "name": "13dagger/slugify",
+  "description": "String to slug converter with both cyrillic and european languages support. Requires iconv, uses intl if possible.",
+  "keywords": [
+    "slug",
+    "slugify",
+    "url"
+  ],
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "13dagger",
+      "email": "13dagger@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "ext-iconv": "*"
+  },
+  "suggest" : {
+    "ext-intl": "Support languages absent in iconv (ex. cyrillic)"
+  },
+  "autoload": {
+    "psr-4": {
+      "slugify\\": "src/slugify"
+    }
+  }
+}
